@@ -28,13 +28,13 @@ public class TrainTicketWebServiceImpl implements TrainTicketWebService {
     }
 
     @WebMethod
-    public void payTicket(Long ticketId) {
-        ticketService.payTicket(ticketId);
+    public void payTicket(TrainTicket trainTicket) {
+        ticketService.payTicket(trainTicket);
     }
 
     @WebMethod
-    public void returnTicket(Long ticketId) {
-        ticketService.returnTicket(ticketId);
+    public void returnTicket(TrainTicket trainTicket) {
+        ticketService.returnTicket(trainTicket);
     }
 
 }

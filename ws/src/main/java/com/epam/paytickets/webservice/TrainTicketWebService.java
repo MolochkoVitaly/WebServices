@@ -16,8 +16,8 @@ public interface TrainTicketWebService {
     TrainTicket getTicketByTicketNumber(Long ticketNumber);
 
     @WebMethod
-    void payTicket(Long ticketId);
+    void payTicket(TrainTicket trainTicket);
 
     @WebMethod
-    void returnTicket(Long ticketId);
+    void returnTicket(TrainTicket trainTicket);
 }
